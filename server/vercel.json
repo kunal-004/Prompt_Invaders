@@ -13,8 +13,6 @@
     }
   ],
   "env": {
-    "GEMINI_API_KEY": "@gemini-api-key",
-    "MONGODB_URI": "@mongodb-uri",
     "NODE_ENV": "production"
   }
 }
