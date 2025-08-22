@@ -3,13 +3,15 @@
 ## Quick Deploy Commands
 
 ### 1. Deploy Backend First
+
 ```bash
 cd server
 vercel --prod
 ```
 
 ### 2. Deploy Frontend
-```bash  
+
+```bash
 cd client
 vercel --prod
 ```
@@ -17,11 +19,13 @@ vercel --prod
 ## Environment Variables Setup
 
 ### Backend (Vercel Dashboard)
+
 - `GEMINI_API_KEY`: Your Google Gemini AI API key
-- `MONGODB_URI`: Your MongoDB Atlas connection string  
+- `MONGODB_URI`: Your MongoDB Atlas connection string
 - `NODE_ENV`: production
 
 ### Frontend (Vercel Dashboard)
+
 - `VITE_API_URL`: https://your-backend-domain.vercel.app
 - `VITE_SOCKET_URL`: https://your-backend-domain.vercel.app
 

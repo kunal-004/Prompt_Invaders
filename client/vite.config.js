@@ -1,5 +1,5 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -8,12 +8,12 @@ export default defineConfig({
     rollupOptions: {
       output: {
         manualChunks: {
-          'react-vendor': ['react', 'react-dom'],
-          'pixi-vendor': ['pixi.js'],
-          'socket-vendor': ['socket.io-client', 'axios']
-        }
-      }
+          "react-vendor": ["react", "react-dom"],
+          "pixi-vendor": ["pixi.js"],
+          "socket-vendor": ["socket.io-client", "axios"],
+        },
+      },
     },
-    chunkSizeWarningLimit: 600
-  }
-})
+    chunkSizeWarningLimit: 600,
+  },
+});
