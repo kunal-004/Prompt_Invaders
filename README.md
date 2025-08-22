@@ -4,8 +4,6 @@
 
 Blast through waves of coding bugs while learning from AI-generated unit tests! Each enemy you destroy triggers Gemini AI to create educational failing tests, then watch as the AI fixes the code and the enemy explodes.
 
-![Prompt Invaders Banner](https://via.placeholder.com/800x200/0a0a0a/00ff41?text=PROMPT+INVADERS)
-
 ## 🚀 Game Concept
 
 **Prompt Invaders** combines classic arcade action with modern AI education:
@@ -88,10 +86,7 @@ Each coding bug triggers Gemini AI to generate:
 
 Ready to start debugging?
 
-**🚀 [Play Prompt Invaders Now!](https://your-frontend-url.vercel.app)**
+**🚀 [Play Prompt Invaders Now!](https://prompt-invaders.vercel.app/)**
 
 ---
-
-_Built with ❤️ for developers who love to learn while they play!_
-
 **Happy Coding & Bug Hunting! 🐛🎯**
