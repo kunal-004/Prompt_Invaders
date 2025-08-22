@@ -1,0 +1,37 @@
+{
+  "name": "prompt-invaders",
+  "version": "1.0.0",
+  "description": "AI-Powered Coding Bug Shooter Game - Blast bugs and learn from AI-generated tests!",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start",
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
+    "deploy:server": "cd server && vercel --prod",
+    "deploy:client": "cd client && vercel --prod",
+    "deploy": "npm run deploy:server && npm run deploy:client"
+  },
+  "keywords": [
+    "game",
+    "ai",
+    "coding",
+    "education",
+    "space-invaders",
+    "react",
+    "pixijs",
+    "gemini",
+    "mongodb"
+  ],
+  "author": "Prompt Invaders Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/prompt-invaders.git"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

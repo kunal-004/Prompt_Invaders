@@ -1,0 +1,46 @@
+<!-- Enhanced Bug Enemy SVG -->
+<svg width="48" height="36" viewBox="0 0 48 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bugGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff4444;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ff6b6b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b0000;stop-opacity:1" />
+    </linearGradient>
+    <filter id="bugGlow">
+      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Main bug body -->
+  <ellipse cx="24" cy="18" rx="16" ry="10" fill="url(#bugGradient)" filter="url(#bugGlow)"/>
+  
+  <!-- Bug segments -->
+  <ellipse cx="24" cy="14" rx="12" ry="6" fill="#ff6b6b" opacity="0.8"/>
+  <ellipse cx="24" cy="22" rx="12" ry="6" fill="#ff6b6b" opacity="0.8"/>
+  
+  <!-- Eyes -->
+  <ellipse cx="18" cy="12" rx="3" ry="4" fill="#ffff00"/>
+  <ellipse cx="30" cy="12" rx="3" ry="4" fill="#ffff00"/>
+  <ellipse cx="18" cy="12" rx="1.5" ry="2" fill="#000000"/>
+  <ellipse cx="30" cy="12" rx="1.5" ry="2" fill="#000000"/>
+  
+  <!-- Antennae -->
+  <line x1="18" y1="8" x2="15" y2="3" stroke="#ff4444" stroke-width="2"/>
+  <line x1="30" y1="8" x2="33" y2="3" stroke="#ff4444" stroke-width="2"/>
+  <circle cx="15" cy="3" r="2" fill="#ff0080"/>
+  <circle cx="33" cy="3" r="2" fill="#ff0080"/>
+  
+  <!-- Legs -->
+  <line x1="10" y1="20" x2="4" y2="28" stroke="#ff4444" stroke-width="2"/>
+  <line x1="14" y1="24" x2="8" y2="32" stroke="#ff4444" stroke-width="2"/>
+  <line x1="34" y1="24" x2="40" y2="32" stroke="#ff4444" stroke-width="2"/>
+  <line x1="38" y1="20" x2="44" y2="28" stroke="#ff4444" stroke-width="2"/>
+  
+  <!-- Warning symbols -->
+  <polygon points="24,16 26,20 22,20" fill="#ffff00"/>
+  <circle cx="24" cy="21" r="1" fill="#ffff00"/>
+</svg>

@@ -1,0 +1,26 @@
+<!-- Laser Bullet SVG -->
+<svg width="6" height="20" viewBox="0 0 6 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="laserGradient" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#00ff41;stop-opacity:0.3" />
+      <stop offset="50%" style="stop-color:#00ff41;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:1" />
+    </linearGradient>
+    <filter id="laserGlow">
+      <feGaussianBlur stdDeviation="1" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Main laser beam -->
+  <rect x="1" y="0" width="4" height="20" fill="url(#laserGradient)" filter="url(#laserGlow)"/>
+  
+  <!-- Core beam -->
+  <rect x="2" y="0" width="2" height="20" fill="#ffffff" opacity="0.8"/>
+  
+  <!-- Energy trail -->
+  <ellipse cx="3" cy="18" rx="2" ry="3" fill="#00ff41" opacity="0.5"/>
+</svg>

@@ -1,0 +1,50 @@
+<!-- Shield Power-up SVG -->
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="shieldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4ecdc4;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#00d4ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0099cc;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shieldGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Outer energy ring -->
+  <circle cx="16" cy="16" r="14" fill="none" stroke="url(#shieldGradient)" stroke-width="1.5" filter="url(#shieldGlow)" opacity="0.8"/>
+  
+  <!-- Shield shape -->
+  <path d="M16,3 L26,8 L26,18 Q26,24 16,29 Q6,24 6,18 L6,8 Z" fill="url(#shieldGradient)" opacity="0.7"/>
+  
+  <!-- Inner shield pattern -->
+  <path d="M16,6 L22,10 L22,17 Q22,21 16,25 Q10,21 10,17 L10,10 Z" fill="#ffffff" opacity="0.3"/>
+  
+  <!-- Shield emblem -->
+  <polygon points="16,10 19,14 16,18 13,14" fill="#ffffff" opacity="0.9"/>
+  <circle cx="16" cy="14" r="2" fill="#4ecdc4"/>
+  
+  <!-- Energy pulses -->
+  <circle cx="16" cy="16" r="12" fill="none" stroke="#4ecdc4" stroke-width="1" opacity="0.4">
+    <animate attributeName="r" values="8;15;8" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;0.1;0.6" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Corner particles -->
+  <circle cx="8" cy="8" r="1" fill="#4ecdc4">
+    <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="24" cy="8" r="1" fill="#00d4ff">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="24" cy="24" r="1" fill="#4ecdc4">
+    <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="8" cy="24" r="1" fill="#00d4ff">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+</svg>
